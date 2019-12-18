@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<head>
+  <title>Michele Creanza</title>
+  <style>
+    body {
+      text-align: center;
+      background: url("twitter.jpeg");
+      background-size: cover;
+      background-position: center;
+      color: yellow;
+      font-family: helvetica;
+    }
+    p {
+      font-size: 22px;
+    }
+    input {
+      border: 0;
+      padding: 10px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <input
+    type="button"
+    class="btn btn-lg btn-success"
+    onclick="location.href='index.html';"
+    value="Home"
+  />
+
+  <h1>Twitter Profile</h1>
+
+  <img src="michele.jpeg" />
+
+  <p>Michele likes playing soccer!!!</p>
+
+  <a
+    href="https://twitter.com/michelecreanza?ref_src=twsrc%5Etfw"
+    class="twitter-follow-button"
+    data-show-count="false"
+    >Follow @michelecreanza</a
+  >
+  <script
+    async
+    src="https://platform.twitter.com/widgets.js"
+    charset="utf-8"
+  ></script>
+
+  <h2>Skype ID tenentemichele</h2>
+
+  <a
+    data-config="commands=*;size=22;status=off;theme=logo;bgcolor=#2a92f3"
+    id="skaip-buttons"
+    href="http://www.skaip.org/"
+    >Skype</a
+  >
+  <script
+    src="http://apps.skaip.org/buttons/widget/core.min.js"
+    defer="defer"
+  ></script>
+
+  <script language="javascript">
+    var popupWindow = null;
+    function centeredPopup(url, winName, w, h, scroll) {
+      LeftPosition = screen.width ? (screen.width - w) / 2 : 0;
+      TopPosition = screen.height ? (screen.height - h) / 2 : 0;
+      settings =
+        "height=" +
+        h +
+        ",width=" +
+        w +
+        ",top=" +
+        TopPosition +
+        ",left=" +
+        LeftPosition +
+        ",scrollbars=" +
+        scroll +
+        ",resizable";
+      popupWindow = window.open(url, winName, settings);
+    }
+  </script>
+  <p>
+    <a
+      href="skype:tenentemichele"
+      onclick="centeredPopup(this.href,'myWindow','700','300','yes');return false"
+      >Skype me</a
+    >
+  </p>
+</body>

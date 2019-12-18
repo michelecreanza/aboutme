@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+  <title>Michele Creanza</title>
+  <style>
+
+    @-webkit-keyframes color-change-2x {
+      0% {
+        background: #19dcea;
+      }
+      100% {
+        background: #b22cff;
+      }
+    }
+    @keyframes color-change-2x {
+      0% {
+        background: #19dcea;
+      }
+      100% {
+        background: #b22cff;
+      }
+    }
+        body {
+              text-align: center;
+              background: url("mygirls.jpeg");
+              background-size: cover;
+              background-position: center;
+              color: blue;
+              font-family: helvetica;
+              -webkit-animation: color-change-2x 2s linear infinite alternate both;
+        	        animation: color-change-2x 2s linear infinite alternate both;
+            }
+            p {
+              font-size: 22px;
+            }
+            input {
+              border: 0;
+              padding: 10px;
+              font-size: 18px;
+            }
+
+            
+  </style>
+</head>
+<body>
+  <input
+    type="button"
+    class="btn btn-lg btn-success"
+    onclick="location.href='index.html';"
+    value="Home"
+  />
+  
+
+  <script language="javascript">
+    var popupWindow = null;
+    function centeredPopup(url,winName,w,h,scroll){
+    LeftPosition = (screen.width) ? (screen.width-w)/2 : 0;
+    TopPosition = (screen.height) ? (screen.height-h)/2 : 0;
+    settings =
+    'height='+h+',width='+w+',top='+TopPosition+',left='+LeftPosition+',scrollbars='+scroll+',resizable'
+    popupWindow = window.open(url,winName,settings)
+    }
+    </script>
+    <p><a href = "https://www.facebook.com/" onclick="centeredPopup(this.href,'myWindow','700','300','yes');return false" target="_parent" class="trophyItem">
+                                
+                    <p class="cupsIcon"> <img src="https://c866088.ssl.cf3.rackcdn.com/assets/facebook30x30.png" alt="cupIcon" /> </p>
+                    
+  <p>
+
+  <h2>Wow - this fish is huuuuuuuuge!!!</h2>
+
+  <img src="michele4.jpeg" />
+
+  <p>Family fun</p>
+</body>
